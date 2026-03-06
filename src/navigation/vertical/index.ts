@@ -1,8 +1,17 @@
 export default [
   {
-    title: 'Home',
+    title: 'Área do Professor',
     to: { name: 'root' },
     icon: { icon: 'tabler-smart-home' },
+  },
+  {
+    title: 'Área do Aluno',
+    icon: { icon: 'tabler-school' },
+    children: [
+      { title: 'Progresso', to: 'academy-dashboard' },
+      { title: 'Meus Cursos', to: 'academy-my-course' },
+      { title: 'Detalhes do Curso', to: 'academy-course-details' },
+    ],
   },
   {
     title: 'Usuários',
@@ -19,32 +28,5 @@ export default [
       { title: 'Permissões', to: 'acesso-permissoes' },
     ],
   },
-  {
-    title: 'Fabricante',
-    icon: { icon: 'tabler-building-factory-2' },
-    to: 'fabricante',
-    action: 'list',
-    subject: 'fabricante',
-  },
-  {
-    title: 'Loja',
-    icon: { icon: 'tabler-building-store' },
-    to: 'loja',
-    action: 'list',
-    subject: 'loja',
-  },
-  {
-    title: 'Produto',
-    icon: { icon: 'tabler-brand-producthunt' },
-    to: 'produto',
-    action: 'list',
-    subject: 'produto',
-  },
-  {
-    title: 'Promocao',
-    icon: { icon: 'tabler-tags-off' },
-    to: 'promocao',
-    action: 'list',
-    subject: 'promocao',
-  },
+
 ]
